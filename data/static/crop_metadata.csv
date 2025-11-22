@@ -1,0 +1,7 @@
+Commodity,Season,Water_Requirement,Typical_Costs_Rs_per_Ha,Average_Yield_Tons_per_Ha,Export_Potential
+Onion,Rabi,Medium,45000,15.0,High
+Wheat,Rabi,Medium,30000,3.5,Medium
+Rice,Kharif,High,40000,4.0,High
+Soybean,Kharif,Low,25000,2.5,High
+Cotton,Kharif,Low,35000,2.0,High
+Tomato,Kharif,High,60000,20.0,Medium

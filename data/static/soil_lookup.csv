@@ -1,0 +1,7 @@
+District,Soil_Type,N,P,K,ph,Nutrient_Balance
+Pune,Black Cotton,250,40,300,7.2,Balanced
+Nashik,Red Laterite,180,35,280,6.5,Deficient
+Nagpur,Deep Black,280,45,350,7.5,Surplus
+Satara,Medium Black,220,38,310,7.0,Balanced
+Aurangabad,Clay Loam,200,42,320,7.8,Surplus
+Solapur,Sandy Loam,190,30,290,7.1,Deficient
