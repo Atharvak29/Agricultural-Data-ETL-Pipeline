@@ -47,7 +47,7 @@ The pipeline uses a modular approach, leveraging:
 
 ---
 
-<<<<<<< HEAD
+
 ### **2. Environment Variables (Windows Fix)**
 
 To prevent:
@@ -66,9 +66,6 @@ Set the following:
 ---
 
 ### **3. Install Dependencies**
-=======
-### **2. Install Dependencies**
-
 
 ```sh
 python -m venv AgriETLvenv
@@ -77,17 +74,13 @@ pip install -r requirements.txt
 ```
 
 ### **4. Initialize Static Data**
-=======
-### **3. Initialize Static Data**
 
 ```
 python scripts/init_lookups.py
 ```
 
-<<<<<<< HEAD
+
 ### **5. Execute Local Pipeline**
-=======
-### **4. Execute Local Pipeline**
 
 Extraction:
 ```
