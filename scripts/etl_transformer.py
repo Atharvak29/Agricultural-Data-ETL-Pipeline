@@ -18,10 +18,14 @@ def get_latest_file(directory):
     return max(files, key=os.path.getctime)
 
 def process_data():
-    spark = SparkSession.builder \
-        .appName(Config.SPARK_APP_NAME) \
-        .config("spark.sql.caseSensitive", "false") \
+    spark = (
+        SparkSession.builder
+        .appName("Agri ETL")
+        .master("local[*]")
+        .config("spark.hadoop.fs.defaultFS", "file:///")
         .getOrCreate()
+    )
+
 
     raw_file = get_latest_file(Config.RAW_DIR)
     if not raw_file:
@@ -31,7 +35,14 @@ def process_data():
     print(f"Processing file: {raw_file}")
 
     # 1. Load Data
-    df_raw = spark.read.parquet(raw_file)
+    # df_raw = spark.read.parquet(raw_file)
+    def normalize_path(path: str) -> str:
+        path = path.replace("\\", "/")
+        return f"file:///{path}"
+
+
+    df_raw = spark.read.parquet(normalize_path(raw_file))
+
     df_soil = spark.createDataFrame(pd.read_csv(Config.SOIL_LOOKUP_PATH))
     df_crop = spark.createDataFrame(pd.read_csv(Config.CROP_META_PATH))
 
