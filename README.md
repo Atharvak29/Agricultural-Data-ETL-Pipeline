@@ -68,18 +68,18 @@ Set the following:
 ### **3. Install Dependencies**
 =======
 ### **2. Install Dependencies**
->>>>>>> c5eaad966ce35414c34a6e697cfd819b84cd81c4
+
 
 ```sh
 python -m venv AgriETLvenv
 .\AgriETLvenv\Scripts\activate
 pip install -r requirements.txt
 ```
-<<<<<<< HEAD
+
 ### **4. Initialize Static Data**
 =======
 ### **3. Initialize Static Data**
->>>>>>> c5eaad966ce35414c34a6e697cfd819b84cd81c4
+
 ```
 python scripts/init_lookups.py
 ```
@@ -88,7 +88,7 @@ python scripts/init_lookups.py
 ### **5. Execute Local Pipeline**
 =======
 ### **4. Execute Local Pipeline**
->>>>>>> c5eaad966ce35414c34a6e697cfd819b84cd81c4
+
 Extraction:
 ```
 python scripts/etl_extractor.py
